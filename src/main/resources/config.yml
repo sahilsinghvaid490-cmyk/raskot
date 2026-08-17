@@ -1,0 +1,41 @@
+# =========================================================
+#  GhostGirl configuration
+#  All gameplay values below are fully configurable.
+# =========================================================
+
+spawn:
+  # Master switch for the automatic spawn cycle.
+  enabled: true
+  # How often (in minutes) the plugin attempts to spawn a ghost girl near each eligible player.
+  interval-minutes: 10
+  # How long (in seconds) a spawned ghost girl stays before disappearing.
+  lifetime-seconds: 10
+  # Maximum horizontal distance (in blocks) from the player at which she may spawn.
+  radius: 5
+  # How many random locations to try before giving up on a safe spawn for a player.
+  max-spawn-attempts: 10
+
+effects:
+  # Play an ambient sound when she appears.
+  sound-enabled: true
+  # Any valid Bukkit Sound enum name (see org.bukkit.Sound).
+  sound-name: "AMBIENT_CAVE"
+  # Spawn particles when she appears.
+  particle-enabled: true
+  # Any valid Bukkit Particle enum name (see org.bukkit.Particle).
+  particle-name: "SOUL"
+  particle-count: 15
+  # Briefly apply the Darkness effect to nearby players for extra atmosphere.
+  darkness-effect: true
+  # Radius (in blocks) within which nearby players receive the darkness effect.
+  darkness-radius: 10
+  # How long (in seconds) the darkness effect lasts.
+  darkness-duration-seconds: 4
+
+messages:
+  reload-success: "Configuration reloaded."
+  status-header: "&5&lGhostGirl &7- Plugin Status"
+
+features:
+  # If true, the targeted player receives a subtle chat message when she appears near them.
+  announce-spawn: false

@@ -1,0 +1,19 @@
+name: GhostGirl
+version: '${version}'
+main: io.ghostgirl.plugin.GhostGirlPlugin
+api-version: '1.21'
+description: A mysterious ghost girl entity appears near players periodically to create a horror atmosphere.
+author: GhostGirl Dev
+website: https://github.com/example/GhostGirl
+
+commands:
+  ghostgirl:
+    description: Main command for controlling the GhostGirl plugin.
+    usage: "/<command> [reload]"
+    permission: ghostgirl.admin
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  ghostgirl.admin:
+    description: Allows use of GhostGirl administration commands (status, reload).
+    default: op
